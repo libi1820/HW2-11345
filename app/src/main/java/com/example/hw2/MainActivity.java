@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -44,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     private MaterialTextView main_LBL_stepsY;
 
     private GameManager gameManager = new GameManager(LIFE, ROWS, COLS);;
-    GeneralActivity generalActivity;
+    GeneralFunctions generalFunctions;
     private eGameMode gameMode;
     private StepDetector stepDetector;
     private boolean isStartGame = false;
@@ -65,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         Intent previousIntent = getIntent();
         String enum_name = previousIntent.getExtras().getString(DataManager.GAME_MODE);
         gameMode = eGameMode.valueOf(enum_name);
-        generalActivity = new GeneralActivity(this);
+        generalFunctions = new GeneralFunctions(this);
         if (gameMode == eGameMode.SLOW_ARROWS || gameMode == eGameMode.FAST_ARROWS) {
             initViewArrows();
         } else if (gameMode == eGameMode.SENSOR) {
@@ -169,8 +168,8 @@ public class MainActivity extends AppCompatActivity {
                 stopTimer();
                 openScorePage(score);
             } else {
-                generalActivity.toast("Lost Life!");
-                generalActivity.vibrate();
+                generalFunctions.toast("Lost Life!");
+                generalFunctions.vibrate();
                 for (int i = gameManager.getLife(); i < LIFE; i++) {
                     main_IMG_hearts[i].setVisibility(View.INVISIBLE);
                 }

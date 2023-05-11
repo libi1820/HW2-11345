@@ -6,18 +6,18 @@ import android.os.VibrationEffect;
 import android.os.Vibrator;
 import android.widget.Toast;
 
-public class GeneralActivity {
+public class GeneralFunctions {
 
     private Context context;
-    private static GeneralActivity _instance = null;
+    private static GeneralFunctions _instance = null;
 
-    public GeneralActivity(Context context) {
+    public GeneralFunctions(Context context) {
         this.context = context;
     }
 
     public static void initHelper(Context context) {
         if (_instance == null) {
-            _instance = new GeneralActivity(context);
+            _instance = new GeneralFunctions(context);
         }
     }
 
@@ -37,7 +37,7 @@ public class GeneralActivity {
     }
 
 
-    public static GeneralActivity getGameService() {
+    public static GeneralFunctions getGameService() {
         return _instance;
     }
 

@@ -7,7 +7,7 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        GeneralActivity.initHelper(this);
+        GeneralFunctions.initHelper(this);
         MySp.initHelper(this);
 
     }
