@@ -17,6 +17,7 @@ import com.google.android.material.floatingactionbutton.ExtendedFloatingActionBu
 import com.google.android.material.imageview.ShapeableImageView;
 import com.google.android.material.textview.MaterialTextView;
 
+import java.util.Random;
 import java.util.Timer;
 
 public class MainActivity extends AppCompatActivity {
@@ -42,23 +43,20 @@ public class MainActivity extends AppCompatActivity {
     private MaterialTextView main_LBL_stepsX;
     private MaterialTextView main_LBL_stepsY;
 
-    private GameManager gameManager = new GameManager(LIFE, ROWS, COLS);;
+    private GameManager gameManager;
     GeneralFunctions generalFunctions;
     private eGameMode gameMode;
     private StepDetector stepDetector;
+    Handler handler = new Handler();
+    Runnable runnable;
     private boolean isStartGame = false;
 
-    private enum TIMER_STATUS {
-        OFF,
-        RUNNING,
-    }
-
-    private TIMER_STATUS timer_status = TIMER_STATUS.OFF;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        gameManager = new GameManager(LIFE, ROWS, COLS);
         findViews();
         setButtons();
         Intent previousIntent = getIntent();
@@ -71,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
             initViewSensor();
             stepDetector.start();
         }
-        sound=MediaPlayer.create(this,R.raw.dog_barking);
+        sound = MediaPlayer.create(this, R.raw.dog_barking);
         score = 0;
         viewDog();
         startGame();
@@ -103,49 +101,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    /*private void startTimer() {
-        if (timer_status == TIMER_STATUS.OFF) {
-            final Handler handler = new Handler();
-
-            handler.postDelayed(new Runnable() {
+    private void startTimer() {
+        if (isStartGame == true) {
+            runnable = new Runnable() {
+                @Override
                 public void run() {
-                    handler.postDelayed(this, delay);
                     gameManager.randomBall();
-                }
-            }, SEC);
-
-            handler.postDelayed(new Runnable() {
-                public void run() {
-                    handler.postDelayed(this,delay+700);
                     gameManager.randomHeart();
                     gameManager.updateBoard();
                     refreshUI();
+                    handler.postDelayed(this, delay);
                 }
-            } ,SEC);
-            timer_status = TIMER_STATUS.RUNNING;
+            };
+            handler.post(runnable);
         }
-    }*/
-
-    private void startTimer() {
-        Handler handler = new Handler();
-        Runnable runnable1 = new Runnable() {
-            @Override
-            public void run() {
-                gameManager.randomBall();
-                handler.postDelayed(this, delay);
-            }
-        };
-        handler.post(runnable1);
-        Runnable runnable2 = new Runnable() {
-            @Override
-            public void run() {
-                gameManager.randomHeart();
-                gameManager.updateBoard();
-                refreshUI();
-                handler.postDelayed(this, delay+600);
-            }
-        };
-        handler.post(runnable2);
     }
 
     private void startGame() {
@@ -154,24 +123,28 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void stopTimer() {
-        timer_status = TIMER_STATUS.OFF;
+        handler.removeCallbacks(runnable);
+        isStartGame = false;
     }
 
     private void refreshUI() {
         score++;
-        main_TXT_score.setText(" "+score);
+        main_TXT_score.setText(" " + score);
         viewBoard();
         if (gameManager.isCrashed()) {
             sound.start();
             gameManager.crash();
             if (gameManager.isLose()) {
                 stopTimer();
+                sound.stop();
                 openScorePage(score);
             } else {
-                generalFunctions.toast("Lost Life!");
-                generalFunctions.vibrate();
-                for (int i = gameManager.getLife(); i < LIFE; i++) {
-                    main_IMG_hearts[i].setVisibility(View.INVISIBLE);
+                if (isStartGame == true) {
+                    generalFunctions.toast("Lost Life!");
+                    generalFunctions.vibrate();
+                    for (int i = gameManager.getLife(); i < LIFE; i++) {
+                        main_IMG_hearts[i].setVisibility(View.INVISIBLE);
+                    }
                 }
             }
         } else if (gameManager.isLife()) {
@@ -272,7 +245,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
-
 
 
 }

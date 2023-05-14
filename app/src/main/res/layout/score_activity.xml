@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/iron_wall"
-        android:text="GAME OVER"
+        android:text="GAME OVER!"
         android:textColor="@color/black"
         android:textSize="36dp" />
 
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:fontFamily="@font/iron_wall"
-        android:text="YOUR POINTS: "
+        android:text="YOUR SCORE: "
         android:textColor="@color/black"
         android:textSize="24dp"
 
@@ -38,9 +38,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:fontFamily="@font/iron_wall"
-        android:text="Type Your Name"
-
-        />
+        android:text="Your Name "
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/score_BTN_save"
@@ -49,7 +48,7 @@
         android:layout_marginTop="40dp"
         android:backgroundTint="#A7DA6E"
         android:fontFamily="@font/iron_wall"
-        android:text="save your score"
+        android:text="save score"
         android:textColor="@color/black" />
 
 
