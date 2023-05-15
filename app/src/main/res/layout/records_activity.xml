@@ -49,7 +49,7 @@
             android:fontFamily="@font/iron_wall"
             android:text="TOP 10"
             android:textColor="#000000"
-            android:textSize="30sp" />
+            android:textSize="37sp" />
 
         <FrameLayout
             android:id="@+id/top_LAY_details"
