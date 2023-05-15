@@ -136,7 +136,6 @@ public class MainActivity extends AppCompatActivity {
             gameManager.crash();
             if (gameManager.isLose()) {
                 stopTimer();
-                sound.stop();
                 openScorePage(score);
             } else {
                 if (isStartGame == true) {
