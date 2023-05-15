@@ -16,7 +16,7 @@
         android:fontFamily="@font/baliw"
         android:text="SAVE FRENCHIE"
         android:textColor="@color/black"
-        android:textSize="40sp" />
+        android:textSize="35sp" />
 
     <TextView
         android:id="@+id/menu_TXT_title2"
@@ -27,7 +27,7 @@
         android:fontFamily="@font/baliw"
         android:text="✨THE BULLDOG✨"
         android:textColor="@color/black"
-        android:textSize="40sp"
+        android:textSize="30sp"
 
         />
 
