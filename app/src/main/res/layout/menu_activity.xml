@@ -25,7 +25,7 @@
         android:layout_below="@id/menu_TXT_title"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/baliw"
-        android:text="THE BULLDOG"
+        android:text="✨THE BULLDOG✨"
         android:textColor="@color/black"
         android:textSize="40sp"
 
@@ -45,9 +45,10 @@
             android:id="@+id/menu_BTN_slowMode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:backgroundTint="#8BC34A"
+            android:layout_margin="25dp"
+            android:backgroundTint="@color/pink"
             android:fontFamily="@font/iron_wall"
+            android:textColor="#000000"
             android:text="SLOW MODE"
 
             />
@@ -56,9 +57,10 @@
             android:id="@+id/menu_BTN_fastMode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:backgroundTint="#8BC34A"
+            android:layout_margin="25dp"
+            android:backgroundTint="@color/pink"
             android:fontFamily="@font/iron_wall"
+            android:textColor="#000000"
             android:text="FAST MODE"
 
             />
@@ -82,9 +84,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:backgroundTint="#8AC24A"
+            android:backgroundTint="@color/pink"
             android:fontFamily="@font/iron_wall"
-            android:text="SENSOR MODE" />
+            android:textColor="#000000"
+            android:text="TILT MODE (SLOW)" />
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>
@@ -96,8 +99,9 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_margin="60dp"
-        android:backgroundTint="#8BC34A"
+        android:backgroundTint="@color/pink"
         android:fontFamily="@font/iron_wall"
+        android:textColor="#000000"
         android:text="TOP 10" />
 
 </RelativeLayout>

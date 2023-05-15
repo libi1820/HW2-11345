@@ -16,7 +16,7 @@
         android:fontFamily="@font/iron_wall"
         android:text="GAME OVER!"
         android:textColor="@color/black"
-        android:textSize="36dp" />
+        android:textSize="40dp" />
 
     <TextView
         android:id="@+id/score_LBL_score"
@@ -24,9 +24,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:fontFamily="@font/iron_wall"
-        android:text="YOUR SCORE: "
+        android:text="FINAL SCORE: "
         android:textColor="@color/black"
-        android:textSize="24dp"
+        android:textSize="25dp"
 
 
         />
@@ -45,8 +45,8 @@
         android:id="@+id/score_BTN_save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:backgroundTint="#A7DA6E"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="@color/pink"
         android:fontFamily="@font/iron_wall"
         android:text="save score"
         android:textColor="@color/black" />
@@ -57,9 +57,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:backgroundTint="#73AC34"
+        android:backgroundTint="@color/pink"
         android:fontFamily="@font/iron_wall"
-        android:text="Start Over"
+        android:text="Back To Menu"
         android:textColor="@color/black"
         android:textSize="32dp"
 
