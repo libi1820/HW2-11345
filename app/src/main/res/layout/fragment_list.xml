@@ -13,7 +13,7 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/list_LNL_row1"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="10dp"
         android:layout_margin="5dp"
         android:layout_weight="1"
         android:gravity="center_vertical"
@@ -26,7 +26,7 @@
             android:layout_weight="1"
             android:text=" 1."
             android:textColor="#000000"
-            android:textSize="15sp"
+            android:textSize="10sp"
 
             />
 
@@ -36,7 +36,7 @@
             android:layout_height="match_parent"
             android:layout_weight="4"
             android:textColor="#000000"
-            android:textSize="15sp" />
+            android:textSize="10sp" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/list_LBL_score1"
@@ -45,7 +45,7 @@
             android:layout_weight="1"
             android:text="  "
             android:textColor="#000000"
-            android:textSize="15sp"
+            android:textSize="10sp"
 
             />
 
@@ -55,7 +55,7 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/list_LNL_row2"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="10dp"
         android:layout_margin="5dp"
         android:layout_weight="1"
         android:gravity="center_vertical"
@@ -68,7 +68,7 @@
             android:layout_weight="1"
             android:text=" 2."
             android:textColor="#000000"
-            android:textSize="15sp"
+            android:textSize="10sp"
 
             />
 
@@ -78,7 +78,7 @@
             android:layout_height="match_parent"
             android:layout_weight="4"
             android:textColor="#000000"
-            android:textSize="15sp" />
+            android:textSize="10sp" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/list_LBL_score2"
@@ -86,7 +86,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textColor="#000000"
-            android:textSize="15sp"
+            android:textSize="10sp"
 
             />
 
@@ -96,7 +96,7 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/list_LNL_row3"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="10dp"
         android:layout_margin="5dp"
         android:layout_weight="1"
         android:gravity="center_vertical"
@@ -109,7 +109,7 @@
             android:layout_weight="1"
             android:text=" 3."
             android:textColor="#000000"
-            android:textSize="15sp"
+            android:textSize="10sp"
 
             />
 
@@ -119,7 +119,7 @@
             android:layout_height="match_parent"
             android:layout_weight="4"
             android:textColor="#000000"
-            android:textSize="15sp" />
+            android:textSize="10sp" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/list_LBL_score3"
@@ -127,7 +127,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textColor="#000000"
-            android:textSize="15sp"
+            android:textSize="10sp"
 
             />
 
@@ -137,7 +137,7 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/list_LNL_row4"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="10dp"
         android:layout_margin="5dp"
         android:layout_weight="1"
         android:gravity="center_vertical"
@@ -150,7 +150,7 @@
             android:layout_weight="1"
             android:text=" 4."
             android:textColor="#000000"
-            android:textSize="15sp"
+            android:textSize="10sp"
 
             />
 
@@ -160,7 +160,7 @@
             android:layout_height="match_parent"
             android:layout_weight="4"
             android:textColor="#000000"
-            android:textSize="15sp" />
+            android:textSize="10sp" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/list_LBL_score4"
@@ -168,7 +168,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textColor="#000000"
-            android:textSize="15sp"
+            android:textSize="10sp"
 
             />
 
@@ -178,7 +178,7 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/list_LNL_row5"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="10dp"
         android:layout_margin="5dp"
         android:layout_weight="1"
         android:gravity="center_vertical"
@@ -191,7 +191,7 @@
             android:layout_weight="1"
             android:text=" 5."
             android:textColor="#000000"
-            android:textSize="15sp"
+            android:textSize="10sp"
 
             />
 
@@ -201,7 +201,7 @@
             android:layout_height="match_parent"
             android:layout_weight="4"
             android:textColor="#000000"
-            android:textSize="15sp" />
+            android:textSize="10sp" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/list_LBL_score5"
@@ -209,7 +209,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textColor="#000000"
-            android:textSize="15sp"
+            android:textSize="10sp"
 
             />
 
@@ -219,7 +219,7 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/list_LNL_row6"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="10dp"
         android:layout_margin="5dp"
         android:layout_weight="1"
         android:gravity="center_vertical"
@@ -232,7 +232,7 @@
             android:layout_weight="1"
             android:text=" 6."
             android:textColor="#000000"
-            android:textSize="15sp"
+            android:textSize="10sp"
 
             />
 
@@ -242,7 +242,7 @@
             android:layout_height="match_parent"
             android:layout_weight="4"
             android:textColor="#000000"
-            android:textSize="15sp" />
+            android:textSize="10sp" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/list_LBL_score6"
@@ -250,7 +250,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textColor="#000000"
-            android:textSize="15sp"
+            android:textSize="10sp"
 
             />
 
@@ -260,7 +260,7 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/list_LNL_row7"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="10dp"
         android:layout_margin="5dp"
         android:layout_weight="1"
         android:gravity="center_vertical"
@@ -273,7 +273,7 @@
             android:layout_weight="1"
             android:text=" 7."
             android:textColor="#000000"
-            android:textSize="15sp"
+            android:textSize="10sp"
 
             />
 
@@ -283,7 +283,7 @@
             android:layout_height="match_parent"
             android:layout_weight="4"
             android:textColor="#000000"
-            android:textSize="15sp" />
+            android:textSize="10sp" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/list_LBL_score7"
@@ -291,7 +291,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textColor="#000000"
-            android:textSize="15sp"
+            android:textSize="10sp"
 
             />
 
@@ -301,7 +301,7 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/list_LNL_row8"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="10dp"
         android:layout_margin="5dp"
         android:layout_weight="1"
         android:gravity="center_vertical"
@@ -314,7 +314,7 @@
             android:layout_weight="1"
             android:text=" 8."
             android:textColor="#000000"
-            android:textSize="15sp"
+            android:textSize="10sp"
 
             />
 
@@ -324,7 +324,7 @@
             android:layout_height="match_parent"
             android:layout_weight="4"
             android:textColor="#000000"
-            android:textSize="15sp" />
+            android:textSize="10sp" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/list_LBL_score8"
@@ -332,7 +332,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textColor="#000000"
-            android:textSize="15sp"
+            android:textSize="10sp"
 
             />
 
@@ -342,7 +342,7 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/list_LNL_row9"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="10dp"
         android:layout_margin="5dp"
         android:layout_weight="1"
         android:gravity="center_vertical"
@@ -355,7 +355,7 @@
             android:layout_weight="1"
             android:text=" 9."
             android:textColor="#000000"
-            android:textSize="15sp"
+            android:textSize="10sp"
 
             />
 
@@ -365,7 +365,7 @@
             android:layout_height="match_parent"
             android:layout_weight="4"
             android:textColor="#000000"
-            android:textSize="15sp" />
+            android:textSize="10sp" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/list_LBL_score9"
@@ -373,7 +373,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textColor="#000000"
-            android:textSize="15sp"
+            android:textSize="10sp"
 
             />
 
@@ -383,7 +383,7 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/list_LNL_row10"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="10dp"
         android:layout_margin="5dp"
         android:layout_weight="1"
         android:gravity="center_vertical"
@@ -396,7 +396,7 @@
             android:layout_weight="1"
             android:text=" 10."
             android:textColor="#000000"
-            android:textSize="15sp"
+            android:textSize="10sp"
 
             />
 
@@ -406,7 +406,7 @@
             android:layout_height="match_parent"
             android:layout_weight="4"
             android:textColor="#000000"
-            android:textSize="15sp" />
+            android:textSize="10sp" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/list_LBL_score10"
@@ -414,7 +414,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textColor="#000000"
-            android:textSize="15sp"
+            android:textSize="10sp"
 
             />
 

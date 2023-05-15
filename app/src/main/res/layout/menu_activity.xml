@@ -16,7 +16,7 @@
         android:fontFamily="@font/baliw"
         android:text="SAVE FRENCHIE"
         android:textColor="@color/black"
-        android:textSize="40sp" />
+        android:textSize="35sp" />
 
     <TextView
         android:id="@+id/menu_TXT_title2"
@@ -27,7 +27,7 @@
         android:fontFamily="@font/baliw"
         android:text="✨THE BULLDOG✨"
         android:textColor="@color/black"
-        android:textSize="40sp"
+        android:textSize="30sp"
 
         />
 
@@ -48,8 +48,8 @@
             android:layout_margin="25dp"
             android:backgroundTint="@color/pink"
             android:fontFamily="@font/iron_wall"
-            android:textColor="#000000"
             android:text="SLOW MODE"
+            android:textColor="#000000"
 
             />
 
@@ -60,8 +60,8 @@
             android:layout_margin="25dp"
             android:backgroundTint="@color/pink"
             android:fontFamily="@font/iron_wall"
-            android:textColor="#000000"
             android:text="FAST MODE"
+            android:textColor="#000000"
 
             />
 
@@ -86,8 +86,8 @@
             android:layout_margin="15dp"
             android:backgroundTint="@color/pink"
             android:fontFamily="@font/iron_wall"
-            android:textColor="#000000"
-            android:text="TILT MODE (SLOW)" />
+            android:text="TILT MODE (SLOW)"
+            android:textColor="#000000" />
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>
@@ -101,7 +101,7 @@
         android:layout_margin="60dp"
         android:backgroundTint="@color/pink"
         android:fontFamily="@font/iron_wall"
-        android:textColor="#000000"
-        android:text="TOP 10" />
+        android:text="TOP 10"
+        android:textColor="#000000" />
 
 </RelativeLayout>
